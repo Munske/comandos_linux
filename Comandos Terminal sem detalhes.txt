@@ -1,0 +1,134 @@
+->sudo su 
+ -->su 
+ -->exit 
+--> logout 
+ -->cal 
+ -->date 
+-->pwd 
+-->ls, ls -lha 
+-->clear 
+--cd, cd .. ,cd /
+-->mkdir 
+-->touch 
+-->rmdir 
+-->rm -rf 
+-->cp, cp -r 
+-->Redirecionadores de saída: > e >> 
+-->mv 
+-->man 
+--help 
+-->info 
+-->history 
+
+
+-----------------------------------------------
+
+
+-->Continuação da aula anterior
+-->Editores de texto modo gráfico e modo texto. 
+-->Criação de arquivos texto através dos editores: vi e nano. 
+-->Comentar sobre outros editores: vim, emacs, joe, ee, elvis, entre outros. 
+-->Comandos de visualização de arquivo através do modo texto: 
+-->cat, tac, head, tail 
+-->wc – lista o número de linhas e palavras 
+-->nl – exibe número de linhas de um arquivo 
+-->diff – diferencia arquivos 
+-->sort – ordena a saída de um comando. 
+-->Mostrar principais arquivos de texto do Sistema: 
+-->/etc/passwd – informações dos usuários. 
+-->/etc/shadow – senhas dos usuários criptografadas. 
+-->/etc/group – grupos do sistema 
+-->/proc/meminfo – infomações sobre a memória 
+-->/proc/devices – dispositivos instalados 
+-->/proc/version – versão do kernel 
+-->/etc/issue - distribuição 
+-->/proc/cpuinfo – informações sobre o processador 
+-->/proc/interrupts – interrupções do hardware 
+-->| - pipe 
+-->More
+-->Less
+-->grep
+
+
+-----------------------------------------------
+
+
+->Compactação de arquivos 
+-->Compactar e descompactar pastas e arquivos através do modo texto utilizando: 
+gzip ,tar (mostrar extensões: bzip2 e gzip). 
+-->Ensinar a criar pacotes e depois realizar a compactação. 
+Gerenciamento de processos 
+-->ps -aux 
+-->ps -lax 
+-->top 
+-->pstree 
+-->Ensinar a visualizar as “pid” dos processos e terminá-los através dos comandos: 
+-->kill, killall, xkill 
+-->Ensinar o que significa os sinais através do kill -l.
+
+-------------------------------------------------
+
+-->Comandos hardware 
+-->uname 
+-->free 
+-->vmstat 
+-->df 
+-->uptime
+-->lsusb 
+-->lshw 
+-->lscpu 
+-->lspci 
+-->lsmod 
+-->modprobe –r nomeMódulo 
+-->modprobe –a nomeMódulo 
+-->halt 
+-->reboot –f 
+-->shutdown –h now (reinicia) 
+-->shutdown –r now (desliga) 
+-->Gerenciamento de pacotes DEBIAN 
+-->apt-get 
+-->apt-get (update, upgrade, remove e install) 
+-->/etc/apt/sources.lst 
+-->apt-cache 
+-->apt-get install –f 
+-->apt-get upgrade –f 
+-->apt-get dist-upgrade –f 
+-->aptitude 
+-->dpkg 
+-->dpkg –i 
+-->dpkg –r 
+-->dpkg –P 
+-->dpkg-reconfigure 
+
+-------------------------------------------------
+
+MANIPULAÇÃO DE USÁRIO E GRUPO
+-->#adduser 
+-->#adduser -disabled-login -no-create-home nome_usuario 
+-->Arquivos: /etc/shadow e /etc/passwd) 
+-->#useradd 
+-->#addgroup 
+-->Arquivo /etc/group 
+-->#delgroup 
+--> id 
+-->passwd (-l, -u, -e, -d) 
+-->#deluser 
+-->#userdel 
+-->#userdel -r 
+-->users 
+-->groups 
+-->who 
+-->whoami 
+-->last
+
+-------------------------------------------------
+
+->Permissões de arquivos e pastas
+-->Entendendo as permissôes
+-->#chmod (Mostrar comando utilizando letras e após ensinar através de numeração binária).
+ -->#chown (Modificar proprietário e grupo de pastas e arquivos)
+-->#chgrp
+-->#Chfn
+
+
+

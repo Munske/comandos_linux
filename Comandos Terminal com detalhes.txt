@@ -1,0 +1,1070 @@
+
+nome do usuario @ nome do computador
+
+~  - indica diretorio
+$  - indica usuario comum
+
+ls - listar arquivos e diretórios do linux (branco arquivos de texto / azul-forte diretório / vermelho arquivos compactados 
+					     / azul-claro links / verde arquivos executáveis / roxo ou rosa imagens)
+
+clear - limpa terminal
+
+man intro - exibe uma breve introdução dos comandos
+
+man man - manual do sistema
+
+ctrl + z - sairF
+
+info - semelhante ao (man) mas traz mais detalhes e é mais preciso
+
+history - exibe todos comandos anteriores
+
+ctrl + alt + f2 abre o terminal 2 do ubunto
+ctrl + alt + f7 volta ao terminal 1 do ubunto
+
+w - exibe quem esta logado e suas informações
+
+sudo su - entrar como super usuario
+
+# - indica super usuario
+
+su + nome do usuario comum - volta a ser usuario comum
+
+pwd - mostra o diretorio atual
+
+ls -l - (1 coluna mostra a permissão, 2 dono do diretório, 
+	  3 grupo do diretório, 4 tamanho, 5 mês dia e hora, 
+	   6 diretório, arquivo ou script)
+
+ls -lh - mostra com mais detalhes o resultado, mostrando em kb ou gb
+
+touch + nome do arquivo - cria um arquivo
+
+stat - exibe o status do arquivo
+
+|grep - filtragem
+
+ls /etc/ |grep ini - lista todas pastas e arquivos que contém ini de inicio
+
+ls -l - lista aquivos linha a linha
+
+ls -s - lista em formato de bloco e ordena por tamanho
+
+ls -a - mostra os diretorios e arquivos ocultos
+
+arquivos que iniciam com . na frete são arquivos ocultos do linux
+
+ls -R - exibe de forma recursiva diretórios e arquivos
+
+ls -lt - exige por ordem de modificação
+
+touch + nome do arquivo + .odt - cria arquivo com extensão odt
+
+ls -d *.odt - lista todos arquivos com extensão odt
+
+mkdir + nome do diretorio - cria um diretorio
+
+mkdir -p + nome de um diretorio + / + nome do sub-diretoio que deseja criar
+
+cd + nome do diretorio - acessar um diretório
+
+cd .. - voltar um nível do diretório
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+rmdir + nome do diretório - remove um diretório vazio
+
+rm + nome de um arquivo - remove um arquivo
+
+rm -r + nome do diretório - remove diretório e sub-diretório
+
+rm -i - pergunta de confirmação antes de excluir um arquivo
+
+rm -vi - confirma e depois mostra oque foi excluido
+
+rm -rf + nome do diretório - exclui e força a exclusão
+
+rm -rfi + nome do diretório - pergunta, exclui e força a exclusão
+
+rm -rfv + nome do diretório - exclui, mostra oque tinha dentro e oque foi excluido
+
+cat + nome do arqv - visualiza oque tem dentro do arquivo em lista
+
+> - envia e apaga oque tem dentro
+
+>> - envia e mantem oque tem dentro (acrescenta)
+
+ls /dev >+nome do arquivo - envia uma cópia de /dev para dentro do arquivo informado
+
+ls -m - lista os arquivos separando por virgula
+
+nano + nome do arquivo - abre o editor de modo grafico (escreve...) depois da + ctrl + 0 para salvar, depois enter pra confirmar nome, e ctrl + x para sair
+
+cp -n + arqv1 + arqv2 - copia do arquivo 1 para o arquivo 2 mas se tiver algo dentro do arquivo ele será apagado
+
+cp -rv arqv1 + arqv2 - copia do arquivo 1 para o arquivo 2 e mostra na tela oque esta sendo copiado mas se tiver algo dentro do arquivo dois ele será apagado
+
+cp -rvi + arqv1 + arqv2 - copia, verifica e sub-escreve
+
+mv + nome do arqv + nome do diretório - move o arqv para o diretório
+
+cal + ano - mostra o calendario do ano
+
+date - exige data e hora do sistema
+
+man cp - cp é copiar e man é manual, assim virá o manual do comando cp, para sair é só dar shift + q
+
+cat arqv1 + arqv2 >> + diretório - copia o conteudo do arqv1 e do arqv2 para o diretório sem apagar o conteúdo do diretório e mostra na tela por conta do cat
+
+cp * /tmp - copia tudo do diretório atual para o diretório selecionado que nesse caso é o /tmp e mantém os arquivos
+
+cd ~ - volta para o diretório raiz do usuario comum
+
+cp -R /bin + /tmp - copia o diretório para outro diretório com todo conteúdo
+
+mv ~/nome do arqv + ~/novo nome - esse comando renomeia o arquivo
+
+cd / - acessa diretório raiz
+
+cd ~ - acessa diretório raiz do usuario comum
+
+exit - fecha terminal
+
+ls c* - lista todos diretorios que começam com c
+
+ls -p - salienta todos os diretorios em uma listagem
+
+du + nome do diretorio - exibe o uso de espaço em um diretório
+
+cat > +nome do arqv - substituira o conteudo atual, ele ficara piscando esperando ser inserido um conteudo, ao terminar de inserir o conteudo é só dar ctrl + d
+
+cat >> +nome do arqv - acrescenta o conteudo, ele ficara piscando esperando ser inserido um conteudo, ao terminar de inserir o conteudo é só dar ctrl + d
+
+cat + nome do arqv + |grep + coleta - ele exibira o arqv e destacara em vermelho a palavra escolhida no arqv, que nesse caso é a palavra coleta
+
+cd /tmp;ls;sleep 8s;clear - acessa o diretório /tmp, lista o conteudo, conta até 8s e limpara o terminal
+
+nano - editor de texto GBU para colocar textos em um arquivo, para sair é só dar ctrl + x
+
+vi - é outro editor em modo texto puro
+
+para inserir um texto dentro de um arquivo com texto ja exixtente é soh dar .a no final do texto, para sair é só dar esc e depois alt + shift + q e depois escolher (w-salva e q!-sai e wq-salva depois sai)
+
+tac + nome do arqv com conteudo - mostra o conteudo de forma invertida no terminal
+
+head + nome do arqv com conteudo - mostra as 10 primeiras linhas do conteudo do arqv
+
+head -n2 + nome do arqv com conteudo - ele exibira as 2 primeiras linhas, o valor pode ser escohido, neste caso foi o 2
+
+head --bytes=100 /etc/passwd - ele mostra os primeiros 100 bytes do diretório
+
+tail + nome do arqv - mostra as 10 últimas linhas do conteúdo do arqv
+
+tail -n2 + nome do arqv com conteudo - ele exibira as 2 ultimas linhas, o valor pode ser escohido, neste caso foi o 2
+
+tail /etc/passwd - exibira as 10 ultimas linhas do diretório
+
+tail --version - exibira a versão do utilitario instalado
+
+file + nome do arqv = ele identifica arquivos ou diretórios
+
+nl + nome do arqv - exibe o conteudo, numerando as linhas, mas não irá numerar linha vazia
+
+wc -m + nome do arqv - exibe a quantidade de caracteres do arquivo
+
+we -l + nome do arqv - exibe a quantidade total de linhas, até mesmo linhas vazias
+
+wc -w + nome do arqv - exibe a quantidade de palavras do arquivo
+
+diff + nome do arqv + outro arqv - ele mostrara a diferença entre o conteudo dos arquivos
+
+dif + nome do arqv + outro arqv > + arqv vazio que irá receber - ele irá inserir as diferenças dentro do arquivo vazio
+
+diff + diretorio1/ diretorio2 - irá mostrar a diferença entre os diretórios
+
+diff -y + arqv1 + arqv2 - exibira as diferenças em colunas
+
+split - serve para quebrar o arqv
+
+split -l 2 + nome do arqv - quebra por linha os arquivos, neste caso 2 linhas
+
+cat x* >nome do arqv  - pegara todo arquivo que começa com x e reescreve dentro do arquivo escolhido
+
+rm x* - exclui todo arquivo que comeca com x
+
+unity --reset - restaura configuração padrão do sistema operacional
+
+cat /proc/cpuinfo |more - more exibe as informações do processador linha a linha
+
+history |more - exibe todos os comando já usados linha a linha, shift + q para sair
+
+|less - exibe dando acesso as cetas de navegação, shift + q para sair
+
+cat /proc/cpuinfo |more - exibe as informações do processador linha a linha com as cetas de navegação
+
+grep ^root /etc/passwd - buscará e filtrará dentro do diretório os usuarios que comecem com root
+
+cat /etc/passwd - exibirá todas informações dos usuarios do sistema operacional
+
+cat /etc/group - ele trará o arquivo onde são armazenados todos os grupos do sistema operacional
+
+cat /etc/issue - mostra a versão da distribuição em uso
+
+cat /etc/shadow - ele mostra todas senhas criptografadas dos usuarios do sistema
+
+cat /proc/meminfo - trará todas informações da memória
+
+cat /proc/device - trará todas informações dos dispositivos instalados
+
+cat /proc/version - trará a informação da versão do kernel
+
+cat /proc/interrupts - trará todas informações sobre as interrupções do hardware
+
+grep -r mouse /etc/* - ele vai procurar em todos arquivos depois do /etc se contém a palavra mouse e mostrará na tela
+
+sort + nome do arqv - mostra em forma alfabetica o conteudo
+
+du -h + diretório - mostrara em formato legivel o tamanho do diretório em kg, mb ou gb
+
+who - mostra quem está logado no momento (nome dia e hora)
+
+tar -cf + nome para o pacote +.tar + nome do arquivo que quer compactar - isso irá compactar um arquivo
+
+tar -tf + nome do pacote +.tar - irá visualizar o conteudo do pacote
+
+tar -rf + nome do pacote +.tar + nome do arquivo que quer enviar pro pacote - isso acrescentará um arquivo para dentro do pacote compactado
+
+tar -xf + nome do pacote +.tar + nome do arqv - comando para extrair arquivo do pacote
+
+tar -cvf + nome do pacote +.tar + nome do arqv - compacta e exibe a compactação
+
+gzip -vr + nome do arquivo - compacta e reduz o tamanho do arquivo
+
+gzip -vt + nome do arquivo +.gz - ele testa a integridade da compactação
+
+gzip -l + nome do arquivo +.gz - tras as informações da compactação
+
+gzip -rv + nome do arquivo +.gz - testa se existe o arquivo compactado
+
+gzip -vd + nome do arquivo +.gz - ele descompacta o arquivo
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+tar -cjvf + nome do pacote +.tar.bz2 + nome doa rqv - Compacta, o bz2 reduz ainda mais do que o .gz
+
+tar -tvf + nome do pacote +.tar.bz2 - compacta e mostra a permissão, o usuario da permisão, o dia da compactação, a hora e o arquivo
+
+tar -xjvf + nome do pacote +.tar.bz2 + nome do arquivo - extrai o arquivo do pacote e exige oque foi extraido
+
+tar - compactra
+gz - compacta e reduz
+gz2 - compacta reduz e mais ainda
+
+comandos de gerenciamento de processo:
+
+ps - exibe os processos em execusão / PDI-(número de identificação do processo) TTY-(terminal de execusão) TIME-(tempo) CMD-(comando)
+
+ps -f -exibe a árvore dos processos / UID-(usuario dono do processo) PID-(número de identificação do processo) PPID-(número de identificação do processo pai) C-(segundos) STIME-(Tempo atual executado) TTY-(terminal de execusão) TIME-(tempo de execusão) CMD-(comando) 
+
+pstree - exibe os processos do SO em formato de árvore
+
+pstree -p - exige os processos do SO em formato de árvore com os PID de cada processo
+
+ps -ef - exibe os processos do SO / UID-(usuario dono do processo) PID-(número de identificação do processo) PPID-(número de identificação do processo pai) STIME-(Tempo atual executado) TTY-(terminal de execusão) TIME-(tempo de execusão) CMD-(comando) 
+
+
+
+ps -aux - exibe todas informações de processos do SO / User-(usuario dono do processo) PID-(número de identificação do processo) %CPU-(uso em % do processador) %MEM-(uso em % da memória) VSZ-(tamanho virtual do processo) RSS-(uso de memoria em KB) TTY-(terminal de execusão) STAT-(Etado do processo) START-(horario de inicio do processo) TIME-(tempo de execusão) COMAND-(Comando)
+
+  STAT 
+
+   |
+   V
+
+Ss = estado suspenso
+S = estado suspenso
+R = executável
+SN = suspenso
+N = prioridade menor que o convencional
+I = estado inoperante, sendo executado por trás
+W = processo paginado em disco
+D = espera no disco
+T = interrompido, em outros casos o I indica Interrompido
+Z = zumbi
+L = estado de recurso bloqueado
+Ssl = suspenso com recurso bloqueado
+
+
+
+top - exibe todos os processos e atualiza em tempo real / ctrl+c sai da exibisão
+
+top -d 5 - exibe todos os processos e atualiza em tempo real a cada 5 segundos, pode colocar os segundos desejados neste caso esta em 5 segundos / ctrl+c sai da exibisão
+
+top -i - exibe os processos ignorados que estão em estado zumbi e atualiza em tempo real / ctrl+c sai da exibisão
+
+top -id 5 - exibe os processos ignorados que estão em estado zumbi e atualiza em tempo real a cada 5 segundos, pode colocar os segundos desejados neste caso esta em 5 segundos / ctrl+c sai da exibisão
+
+
+Para finalizar um processo !!!
+=============================================
+ps -aux - (Identificar o PID do processo)
+
+-9 - Força o fechamento
+
+kill -9 + PID do processo
+=============================================
+
+outra forma...
+
+=============================================
+ps -aux - (Identificar o nome do processo)
+
+killall + nome idêntico do processo
+=============================================
+
+outra forma...
+
+=============================================
+xkill
+
+finaliza o processo em modo gráfico, clicando 
+no app que está aberto para fechá-lo
+(CUIDADO ONDE CLICA)
+=============================================
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+last reboot - comando para mostrar a última reinicialização do SO
+
+lsmod - exibe as informações do que é carregado no kernel (Kenel = Núcleo do Sistema Operacional)
+
+ip link show - exibe o status de todas interfaces de rede
+
+*/
+LOOKBACK = informa ser uma interface de rede virtual utiliza classe A (127.0.0.1)
+
+TCP/Ip = leva as informações de pacotes via rede do servidor ao cliente com IP identificado
+
+ping = testa transmissão na rede
+/*
+
+
+ifconfig lo - exibe as informações da interface LOOPBACK
+
+ping 127.0.0.1 - fica pingando a maquina escolhida / para parar e sair é só usar o ctrl + c
+
+
+
+
+vizualização do hardware... (logar como Super Usuario)
+
+uname -a - exibe as informações disponíveis / SO, nome do Computador, Info do SO, Versão, Data, hora e tipo de SO
+
+uname - exibe o nome do SO
+
+uname -s - exibe o nome do SO
+
+uname -n - exibe o nome do computador
+
+uname -rn - exibe o nome do computador e a versão do kernel
+
+uname -p - exibe o tipo do processador (x86 ou x64)
+
+uname -v - exibe a data de copilação do SO
+
+free - exibe a utilização de memória
+
+free -k - exibe a utilização de memória em KB
+
+free -g - exibe a utilização de memória em GB
+
+vmstat - exibe as informações da memória, i/o (entrada e saida), SO e da CPU (processador)
+
+vmstat -d - exibe as informações sobre as atividades do disco (HD)
+
+vmstat -s - exibe as informações em tabela sobre estatísticas da memória e dos eventos
+
+V maiusculo...
+vmstat -V - exibe a informação sobre o apricativo, neste caso exibe do vmstat
+
+slabtop - exibe informações em tempo real sobre a memória cache / para sair é só usar ctrl + c
+
+df - exibe os dispositivos o tamanho e onde estão montados
+
+df -a - exibe os sistemas de arquivos em blocos
+
+df -h - exibe as informaçõs de espaço do sistema de arquivos em MEGA, KB e GB
+
+df -l - exibe o sistema de arquivo local
+
+T maiusculo...
+df -T - exibe as informações de arquivos em bloco e também lista o tipo de sistema de arquivo de cada partição
+
+lsusb - lista todas as portas USB do computador
+
+lsusb -v - exibe as informações das portas usb da máquina
+
+lsusb -vv - exibe com mais detalhe as informações das portas usb da máquina
+
+lsusb -d - exibe os dispositivos usb especificos através de um endereço
+
+lsusb -t - exibe os dispositivos usb de forma hierárquica
+
+lscpu - exibe as informações do processador
+
+lscpu -p - exibe uma analise da sequência de entrada do processador
+
+lshw ou em outra versão lshal - mostra todos os dados do hardware
+
+filtrar partições dos dispositivos:
+
+cd /dev
+ls
+ls |grep sda
+
+neste caso foi filtrado o sda que exibira as partições do disco físico
+
+
+
+dmidecode -t memory - testa se os slots de memória estão okay
+
+uptime - serve para monitorar o tempo que o SO esta ligado e a carga
+
+users - mostra o usuario conectado no SO
+
+lsusb -x - tras as mascaras hexadecimais para exibis as informações do processador
+
+lshw  -businfo - exibe a informações dos barramentos do dispositivo
+
+lshw -html - trás as informações do barramento em formato html
+
+lspci - lista os dispositivos conectados que utilizam o barramento pci
+
+lspci -v - exibe com mais detalhes as informações dos barramentos pci
+
+lspci -n - exibe os códigos dos dispositivos
+
+lsmod - exibe todos os móduos que estão sendo utilizados pelo sistema
+
+cat /proc/modules - exibe todos os móduos que estão sendo utilizados pelo sistema separando por coluna
+
+sudo modprobe -r psmouose - desativa os botões do mouse
+
+sudo modprobe -a psmouse - ativa os botões do mouse
+
+
+
+=====================
+se não estiver como super usuario utilize o sudo atrás dos códigos
+
+halt - desliga o computador
+
+halt -n - reinicia sem sincronizar nada
+
+halt -f - força a reinicialização novamente
+
+halt -v - exibe uma mensagem para depois efetuar o desligamento
+
+halt -q - exibe uma mensagem de erro
+
+reboot - reinicia o computador sem parametro
+
+shutdown - reinicia o computador
+
+shutdown -h now - reinicia agora
+
+shutdown -r now - desligar agora
+
+shutdown -f now - efetua um reboot rápido forçado 
+=====================
+
+instalação de pacotes via terminal, precisar estar como super usuário:
+
+apt-get install joe - instalará o pacote joe (parecido com o nano)
+
+caso for pedido o forçamento da instalação é só faze o seguinte: apt-get install -f joe
+
+apt-get upgrade - atualiza as versões dos programas e bibliotecas do pc
+
+apt-get dist-upgrade - atualiza a versão da distribuisão
+
+apt-get autoremove joe - ele removerá o pacote joe mas deixara os arquivos de configuração, mantendo sujo o SO
+
+apt-get --purge remove joe - ele removerá o pacote joe e todos os arquivos de configuração
+
+apt-get search tuxpaint - busca o pacote tuxpaint no sistema
+
+apt-cache showpkg tuxpaint - ele trará mais informações sobre o tuxpaint
+
+apt-cache depends joe - mostrará as dependencias do joe
+
+======================
+primeiro instalar o aptitude:
+
+apt-get install aptitude - instalação do aptitude
+
+aptitude install emacs - aptitude também pode instalar pacotes e aplicativos, neste caso foi instalado o emacs
+
+aptitude remove emacs - aptitude também pode remover pacotes e aplicativos e remove toda sujeira, neste caso foi instalado o emacs
+
+======================
+
+======================
+cd /var/cache/apt/archives - para achar os .deb do sistema
+
+ao dar ls dentro deste diretório oque estiver em vermelho precisa ser instalado
+
+dpkg -i + o pacote .deb escolhido - fará a instalação do .deb escolhidos
+dpkg - i *.deb - atualiza todos .deb (sintaxe do colega kevin oliveira)
+
+dpkg -l - lista e exibe todos os pacotes instalados no SO
+
+dpkg --contents + nome do pacote .deb - lista o conteúdo do pacote .deb
+
+dpkg -s + nome do pacote .deb - verifica se o pacote foi instalado
+
+dpkg -P + nome do pacote .deb - desinstalará o pacote .deb escolhido e limpará todas as configurações
+
+dpkg --configure -a - configura todos os pacotes .deb que não estão configurados
+
+dpkg-reconfigure debconf - irá reconfigurar todos os pacotes do sistema
+
+======================
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Manipulação de Usuarios:
+
+sudo adduser + nome do usuario - criará um usuario, pedirá todos dados necessarios para criação
+
+sudo cat /etc/passwd - verificar se o usuario foi criado, no final da tela será acrescentado uma linha
+
+sudo userdel -r + nome do usuario - fará a remoção do usuário e seus arquivos e diretórios
+
+sudo userdel + nome do usuario - fará a remoção do usuario, porém deixara os arquivos e diretórios
+
+sudo userdel -f + nome do usuario - forçará a remoção do usuário e seus arquivos e diretórios
+
+sudo passwd + nome do usuario - criar nova senha de usuário
+
+sudo login + nome do usuario - irá logar com o usuario escolhido
+
+logout - deslogará
+
+sudo passwd -l + nome do usuario - bloqueará a senha do usuario escolhido
+
+sudo passwd -u + nome do usuario - desbloqueiará a senha do usuario escolhido
+
+sudo passwd -e + nome do usuario - forçará inspiração de senha do usuario no proximo login
+
+sudo passwd -d + nome do usuario - desativa o usuario e remove a senha
+
+id + nome do usuario - exibirá o id do usuario (uid), identificador primario de grupo (gid), identificador secundario de grupo (grupos)
+
+G Maiúsculo...
+id -G + nome do usuario - exibe o grupo pertencente do usuario escolhido
+
+id -nG + nome do usuario - exibe o nome específico do usuario
+
+sudo addgroup + nome do grupo - criará um grupo
+
+sudo adduser + nome do usuario + nome do grupo - adicionará o usuario dentro do grupo
+
+groups + nome do usuario - mostrará o grupo do usuario escolhido
+
+sudo adduser -ingroup + nome do grupo + nome do usuario novo - criará o grupo e tambem um usuario novo dentro deste grupo
+
+sudo deluser + nome do usuario + nome do grupo - removerá o usuario do grupo
+
+sudo userdel -r + nome do usuario - removerá o usuario
+
+grep + nome do grupo + /etc/group - exibirá a linha do último grupo criado
+
+lognme - exibe o nome de quem está logado
+
+r    /permissão de leitura
+w    /permissão de gravação
+x    /permissão da execução
+-    /permissão desabilitada
+
+ls -l - exibe todas as permissões dos arquivos e diretórios do diretório atual
+
+sudo chmod 755 + nome do diretorio - altera a permissão para 755
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+U = usuário
+G = grupo
+O = outros grupos secundários
+A = todos os outros grupos
+
+sudo chmod u+w + nome do arqv ou dir = está adicionando a permissão do w ao usuario / u = usuario e w = gravação
+
+sudo chmod u-w + nome do arqv ou dir = está retirando a permissão do w do usuario / u = usuario e w = gravação
+
+sudo chmod u=- + nome do arqv ou dir = está removendo todas permissões do usuario
+
+sudo chmod g=rwx,o=- + nome do arqv ou dir - está modificando a permissão de dois arqv ou diretorio separando-o por ,
+
+sudo chown + novo prorpietário + nome do arqv ou dir - trocará o prorpietário do arqv ou dir
+
+sudo chgrp + nome do grupo + nome do arqv ou dir = trocará o grupo do arqv ou dir
+
+sudo chfn + nome do usuario - serve para alterar as informações do usuario
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(SHELL)
+
+variáveis são sempre Maiúsculas
+
+X=0             - variavel x recebendo 0 como valor
+echo $a         - o $ estará pegando o valor do (x) e colocando no (a)
+echo $((a++))   - está incrementando o (a) no terminal
+
+--------------------------------------------------------------------------
+
+A=10             - variavel A recebendo 0 como valor
+echo $((A--))    - está decrementando o (A) no termina
+
+--------------------------------------------------------------------------
+
+A=2
+B=3
+echo $((A**$B))     - * fará a expoênciação
+
+--------------------------------------------------------------------------
+
+A=40
+B=20
+echo $A 	    - irá printar a variável A
+echo $B 	    - irá printar a variável B
+echo $(($A/$B))     - irá fazer a divisão entre A e B
+
+--------------------------------------------------------------------------
+
+A=60
+B=20
+echo $(($A%$B))     - irá mostrar o resto da divisão
+
+--------------------------------------------------------------------------
+
+valor1-90
+valor2=30
+total=$((valor1+valor2))
+echo $total               -irá printar a variável total
+
+--------------------------------------------------------------------------
+
+echo "Você está no diretóio: $PWD" - irá imprimir a frase com o diretório no final
+
+--------------------------------------------------------------------------
+
+criando um script:
+
+touch exemplo1.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo1.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash	              - ele é quem irá executar os comando no terminal
+
+printf "Digite a sua idade:"  - também imprime o texto na tela como o echo
+read idade                    - captura o que o usuário digitar no terminal
+idadeEmdias=$(($idade*365))
+printf "Você já viveu $idadeEmdias!\n"
+
+salvar, depois...
+
+sudo chmod 777 exemplo1.sh    - irá conceder permissão total ao arquivo exemplo1.sh
+
+./exemplo1.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo2.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo2.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash	              - ele é quem irá executar os comando no terminal
+
+clear
+printf "Mostrando a data:\n"
+date
+sleep 5s
+clear
+echo "Mostrando o calendário:\n"
+cal
+sleep 5s
+clear
+
+salvar, depois...
+
+sudo chmod 777 exemplo2.sh    - irá conceder permissão total ao arquivo exemplo2.sh
+
+./exemplo2.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo2.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo2.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+if ls /home/Munske/Imagens  		- Condição verdadeira
+then                       		- Então
+  echo "Achou o diretório"
+else                        		- senão
+  echo "Não achouo o diretório"
+fi                          		- fim da condicional
+
+salvar, depois...
+
+sudo chmod 777 exemplo3.sh    - irá conceder permissão total ao arquivo exemplo3.sh
+
+./exemplo3.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo4.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo4.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+if cd /
+then
+ echo "diretório raiz encontrado"
+fi
+
+salvar, depois...
+
+sudo chmod 777 exemplo4.sh    - irá conceder permissão total ao arquivo exemplo4.sh
+
+./exemplo4.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo5.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo5.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+echo "criando script"
+ls
+history
+free -g
+touch prova.txt
+echo "fim da execução"
+
+salvar, depois...
+
+sudo chmod 777 exemplo5.sh    - irá conceder permissão total ao arquivo exemplo5.sh
+
+./exemplo5.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo6.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo6.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+echo "Seu nome de usúario é:"
+whoami
+echo "info da hora atual e tempo que o computador está ligado:"
+uptime
+echo "o script está sendo executado no ditetório:"
+pwd
+
+salvar, depois...
+
+sudo chmod 777 exemplo6.sh    - irá conceder permissão total ao arquivo exemplo6.sh
+
+./exemplo6.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo7.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo7.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+clear
+echo "Digite o nome de um diretório que será criado"
+read nome
+if [ -e $nome ];then                                - o -e significa: se existir
+  echo "Já existe um diretório com esse nome"
+  sleep 5s
+  clear
+else
+  mkdir $nome
+  echo "Diretório criado!"
+fi 
+
+salvar, depois...
+
+sudo chmod 777 exemplo7.sh    - irá conceder permissão total ao arquivo exemplo7.sh
+
+./exemplo7.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo9.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo9.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+echo "Escolha a opção desejada:"
+echo "1-Adicionar novo usuário"
+echo "2-Exibir usuário exixtente"
+echo "3-Remover usuário"
+echo "4-Bloquear usuário"
+echo "5-Desbloquear usuário"
+read op
+if [ $op -eq 1 ];then			-eq significa igual
+	echo "Nome do novo usuário"
+	read nome
+	sudo adduser $nome
+	sleep 5s
+	clear
+elif [ $op -eq 2 ];then
+	sudo cat /etc/passwd
+	sleep 5s
+	clear
+elif [ $op -eq 3 ];then
+	echo "Nome do usuário que deve ser removido:"
+	read nome
+	sudo userdel -r $nome
+	sleep 5s
+	clear
+elif [ $op -eq 4 ];then
+	echo "Nome de usuário que deve ser bloqueado"
+	read nome
+	sudo passwd -l $nome
+	sleep5
+	clear
+elif [ $op -eq 5 ];then
+	echo "Nome de usuário que deseja desbloquear"
+	read nome
+	sudo passwd -u $nome
+	sleep5
+	clear
+else
+	echo "Operação invalida"
+fi
+
+salvar, depois...
+
+sudo chmod 777 exemplo9.sh    - irá conceder permissão total ao arquivo exemplo9.sh
+
+./exemplo9.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+touch exemplo10.sh      - irá criar um arquivo como um arquivo executável
+nano exemplo10.sh       - irá entrar no arquivo para criar o script
+
+todos os arquivos precisam desta linha para chamar o copilador do código:
+#!/bin/bash
+
+echo "1-Para reiniciar a máquina"
+echo "2-Para desligar a máquina"
+read resposta
+if [ $resposta -eq 1 ];then
+	sudo shutdown -h now
+elif [ $resposta -eq 2 ];then
+	sudo shutdown -r now
+	sleep 5s
+	clear
+else
+	echo "Opção inválida"
+fi
+
+salvar, depois...
+
+sudo chmod 777 exemplo10.sh    - irá conceder permissão total ao arquivo exemplo10.sh
+
+./exemplo10.sh                 - irá executar no terminal o script
+
+--------------------------------------------------------------------------
+
+
+(SAMBA)
+
+sudo su
+
+sudo samba -V       - verificar se o samba esta instalado, e mostrará a versão
+
+caso não esteja instalado...
+
+sudo apt-get install samba
+
+depois...
+
+cd /etc/samba/           - entrar no diretório do samba
+
+ls                       - listar conteúdo do samba
+
+terá no arquivo...
+
+gdbCommands smb.conf tls
+
+terá que criar uma cópia de segurança do arquivo (smb.conf) 
+
+nomeando -> (smb.conf.backup)
+
+sudo cp smb.conf smb.conf.backup
+
+depois...
+
+nano smb.conf
+
+ctrl + w para procurar por (Global Settings) no arquivo
+
+dentro de change escrever...
+
+workgroup = WHORGROUP
+
+netbios = "WORKGROUP"
+
+server string = "Servidor Samba"
+
+salvar, depois...
+
+ctrl + w para procurar por (Share Definitions) no arquivo
+
+-----------------------------------------------------------------------------------------------------------------------
+# user's home directory as \\server\username
+  [aula]
+	patch = /home/arquivos				-endereço de compartilhamento
+	comment = compartilhamento da pasta arquivos	-comentario
+	available = ues					-ativando o compartilhamento
+	browseable = yes				-ativando utilização da pasta
+	writable = yes					-ativando permição de gravação
+	#filtrando compartilhamento por endereço IP
+	#hosts allows = 192.168.0.10, 192.168.0.15	-liberando as maquinas por IP
+	#hosts deny = 192.168.0.10, 192.168.0.15	-liberando as maquinas por IP
+	#valid users = andreza jose			-usuarios que podem vizualizar o compartilhamento
+	#invalid users = joao maria			-usuarios que nao podem visualizar o compartilhamento
+-----------------------------------------------------------------------------------------------------------------------
+
+salvar, depois...
+
+cd ~
+
+cd /home 
+
+mkdir arquivos
+
+agora terá que criar os usuários e colocar dentro do samba...
+
+sudo adduser matheus
+
+sudo smbpasswd -a matheus      - irá colocar o usuário matheus dentro do samba
+
+sudo pdbedit -L                - verificar se o usuário esta no samba
+
+sudo testparm                  - verifica se o samba está configurado certo
+
+sudo /etc/init.d/smbd stop     - irá parar o servidor samba
+
+sudo /etc/init.d/smbd restart  - irá reinicializar o servidor samba
+
+sudo /etc/init.d/smbd start    - irá inicializar o servidor samba
+
+verificar o ipv4 no windows antes...
+
+depois dar windows + r
+
+digitar o ipv4
+
+e irá mostrar a pasta compartilhada
+
+ifconfig		       - verifica os IPs da rede
+
+sudo chmod a+rwx aula   - o (a) significa que irá liberar o acesso para 
+			  todos os usuários que estão no samba
+
+-------------------------------------------------------------------------------------------
+
+(SSH)
+
+sudo apt-get install ssh    - o ssh deve ser instalado nas duas máquinas
+
+ssh munske2@192.168.0.10    - está acessando a máquina do usuário munske2 pelo ip da rede
+
+ou
+
+ssh -l munske2 192.168.0.10
+
+exit - irá sair do acesso
+
+-------------------------------------------------------------------------------------------
+
+scp arquivo2 andreza@192.168.25.5:/tmp/aula   - irá transferir o arquivo de uma maquina para outra
+	A				A
+	|				|
+ arqv a ser mandado	    diretório que será mandado
+
+-------------------------------------------------------------------------------------------
+
+remina    - acesso remoto do linux (parecido com o patty do windows)
+
+-------------------------------------------------------------------------------------------
+
+(Sistema Operacional)
+
+
+
+sudo ifconfig + placa de rede(ex:enp0s3) + down - desabilitar a placa de rede
+
+sudo ifconfig + placa de rede(ex:enp0s3) + up   - ativar placa de rede
+
+ifconfig lo  - mostra a interface virtual que faz comunicação entre o cliente e o server
+
+sudo ifconfig + placa de rede(ex:enp0s3) + IP - definindo um Ip a placa de rede (fixando IP)
+
+sudo ifconfig + placa de rede(ex:enp0s3) + IP netmask 255.255.255.0 - irá fixar o IP e a máscara de rede
+
+
+ifconfig + placa de rede(ex:enp0s3) + netmask 255.255.255.0 - irá fixar a máscara da rede
+
+netstat -a - irá exibir todas conexões rede
+
+netstat -na - irá exibir todas conexões de rede com mais detalhes
+
+netstat -lptu - exibe todas as portas que estão abertas
+
+netstat -tulpn - exibe todas as portas que estão abertas com seus respectivos processos
+
+netstat -sp -tcpp - exibe todas informações sobre todos os pacotes tpc
+
+ifconfig + placa de rede + broadcast + o IP - irá definir o endereço de broadcast de uma interface
+
+broadcast - É um método de transferência de mensagem para todos 
+            os receptores simultaneamente
+
+printenv - exibe as variáveis de ambiente
+
+env - exibe as variáveis que foram exportadas
+
+set - exibe os nomes das variáveis do shell
+
+net share - exibe recursos compartilhados
+
+start + sysvol - irá abrir a pasta solicitada
+
+--------------------
+gpupdate /force
+--------------------
+
+
+
+
